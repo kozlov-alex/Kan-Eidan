@@ -101,7 +101,13 @@
                 <label for="t4">T4 :</label>
                 <input type="number" id="t4" value="0">
             </div>
-          
+            
+            <!-- Ajout du champ Plans -->
+            <div class="input-group">
+                <label for="plans">Plans :</label>
+                <input type="number" id="plans" value="0">
+            </div>
+            
             <h2>Ryos</h2>
             <div class="input-group">
                 <label for="ryos">Don en Ryos :</label>
@@ -138,8 +144,8 @@
 
             // Calcul des points
             const pointsRessources = (bois * 1) + (fer * 2) + (cuivre * 3) + (plastique * 5) +
-                                     (laine * 10) + (cuir * 15) + (titane * 20) + (chakraMetal * 30);
-            const pointsEquipements = (t1 * 5) + (t2 * 20) + (t3 * 150) + (t4 * 250) + (plans * 2);
+                                     (laine * 10) + (cuir * 15) + (titane * 30) + (chakraMetal * 100);
+            const pointsEquipements = (t1 * 5) + (t2 * 40) + (t3 * 130) + (t4 * 280) + (plans * 2);
 
             const totalPoints = pointsRessources + pointsEquipements + pointsRyos;
 
